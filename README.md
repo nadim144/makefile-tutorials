@@ -17,6 +17,25 @@ The arguments ‘-f name’ or ‘--file=name’ tell make to read the file name as the 
 
 
 > Let's try to understand above all points. 
-~~~
+Before moving ahead, check make is install in you Linux machine or not?. In my case I am using WSL Ubuntu. To verify make - please open teminal and type. if anything apart from this as below image. - means make is not install. And you have to install make.
+
 
 ~~~
+mna@DESKTOP-194LI0R:~$ make
+make: *** No targets specified and no makefile found.  Stop.
+~~~
+>Install make utility, It ask password, please provide the password.
+~~~
+mna@DESKTOP-194LI0R:~$ sudo apt install make
+[sudo] password for mna:
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+make is already the newest version (4.3-4.1build1).
+make set to manually installed.
+The following packages were automatically installed and are no longer required:
+  htop libnl-3-200 libnl-genl-3-200
+Use 'sudo apt autoremove' to remove them.
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+~~~
+
