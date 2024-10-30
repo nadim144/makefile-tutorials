@@ -1,0 +1,1 @@
+int pluse(int a, int b);
