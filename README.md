@@ -12,8 +12,8 @@ To execute makefile rule, simple shell command: "make"
 3. it is possible to give command line arguments with "make" command, to control which files/target should be compiled, or how.
 By default, make starts with the first target define in makefile, make reads the makefile in the current directory and
 begins by processing the first rule.
-4. If you want to use a nonstandard name for your makefile, you can specify the makefile name with the ‘-f’ or ‘--file’ option.
-The arguments ‘-f name’ or ‘--file=name’ tell make to read the file name as the makefile.
+4. If you want to use a nonstandard name for your makefile, you can specify the makefile name with the -f or --file option.
+The arguments -f name or --file=name tell make to read the file name as the makefile.
 
 
 > Let's try to understand above all points. 
