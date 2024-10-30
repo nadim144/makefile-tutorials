@@ -39,3 +39,6 @@ Use 'sudo apt autoremove' to remove them.
 0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
 ~~~
 
+> ## Day 01
+1. Go inside development folder in linux machine, I my case folder name is ""makefile-tutorials"": ex. - """mna@DESKTOP-194LI0R:~/dev/makefile-tutorials$"""
+1. create two files name as: (1) main.c and (2) makefile or Makefile or GNUmakefile ***(Note: without any extension)***, I will all three name one by one.
