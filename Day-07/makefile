@@ -11,19 +11,18 @@ LIBRARIES   :=
 EXECUTABLE  := main
 
 # Define Targets
-all: $(BIN)/$(EXECUTABLE)
+build: $(BIN)/$(EXECUTABLE)
 
-run: clean all
-	clear
-	@echo "🚀 Executing..."
-	./$(BIN)/$(EXECUTABLE)
+rebuild: clean build
+	@echo "Re-build Successful..."
 
 $(BIN)/$(EXECUTABLE): $(SRC)/*.cpp
-	@echo "🚧 Building..."
+	@echo "Building..."
 	$(CXX) $(CXX_FLAGS) -I$(INCLUDE) -L$(LIB) $^ -o $@ $(LIBRARIES)
-	@echo "🚧 Buil Successful, Check binary in $(BIN)/$(EXECUTABLE)..."
-
+	@echo "Buidl Successful, Check binary in $(BIN)/ folder..."
+run:
+	$(BIN)/$(EXECUTABLE)
 clean:
-	@echo "🧹 Clearing..."
+	@echo "Clearing..."
 	-rm $(BIN)/*
-	@echo "🧹 Clearing Successful..."
+	@echo "Clearing Successful..."
